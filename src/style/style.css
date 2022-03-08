@@ -355,23 +355,23 @@ footer {
         transition: .3s ease-in-out;
     }
 
-    #check:checked~nav {
+    #nav.active {
         visibility: visible;
         /* opacity: 1; */
         width: 50vw;
     }
 
-    #check:checked~#navbarbtn>#l1 {
+    #navbarbtn.active>#l1 {
         opacity: 0;
     }
 
-    #check:checked~#navbarbtn>#l2 {
+    #navbarbtn.active>#l2 {
         padding: 0;
         margin: 0;
         transform: rotate(-135deg);
     }
 
-    #check:checked~#navbarbtn>#l3 {
+    #navbarbtn.active>#l3 {
         padding: 0;
         margin: 0;
         transform: rotate(135deg);
@@ -382,7 +382,7 @@ footer {
 @media (max-width: 400px) {
 
     /* header */
-    #check:checked~nav {
+    #nav.active {
         width: 100vw;
     }
 
