@@ -269,7 +269,6 @@ footer {
 #contatos-container>div>h3 {
     text-align: center;
     color: white;
-    /* text-transform: uppercase; */
 }
 
 #creditos {
@@ -310,7 +309,7 @@ footer {
         top: 15vh;
         width: 50vw;
         height: 75vh;
-        opacity: 0;
+        display: none;
         transition: .5s ease-in-out;
     }
 
@@ -351,7 +350,7 @@ footer {
     }
 
     #check:checked~nav {
-        opacity: 1;
+        display: block;
     }
 
     #check:checked~#navbarbtn>#l1 {
