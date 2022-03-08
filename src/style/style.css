@@ -307,12 +307,9 @@ footer {
         z-index: 1;
         right: 0;
         top: 15vh;
-        /* width: 50vw; */
         width: 0;
         height: 75vh;
         visibility: hidden;
-        /* opacity: 0; */
-        /* transition: visibility 0s, opacity .5s linear; */
         transition: .5s;
         overflow-x: hidden;
     }
@@ -357,7 +354,6 @@ footer {
 
     #nav.active {
         visibility: visible;
-        /* opacity: 1; */
         width: 50vw;
     }
 
