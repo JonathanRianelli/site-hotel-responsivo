@@ -309,8 +309,9 @@ footer {
         top: 15vh;
         width: 50vw;
         height: 75vh;
-        display: none;
-        transition: .5s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity .5s linear;
     }
 
     ul {
@@ -350,7 +351,8 @@ footer {
     }
 
     #check:checked~nav {
-        display: block;
+        visibility: visible;
+        opacity: 1;
     }
 
     #check:checked~#navbarbtn>#l1 {
