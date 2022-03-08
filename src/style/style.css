@@ -1,0 +1,418 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 15vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#check {
+    display: none;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-left: 10vw;
+}
+
+
+#navbarbtn {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.linha {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    margin-top: 8px;
+    height: 3px;
+    width: 33px;
+}
+
+ul {
+    display: flex;
+    margin-right: 8vw;
+}
+
+li>a {
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 30px;
+    align-items: center;
+}
+
+li>a:hover {
+    background-color: rgba(68, 68, 68, 0.178);
+    transition: .5s;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main>p {
+    background-color: rgb(228, 228, 228);
+    padding: 10px;
+    color: rgb(70, 70, 70);
+}
+
+#hotel-img {
+    height: 75vh;
+    background: url('../img/hotel-exterior.jpg') center center /cover no-repeat;
+}
+
+section>h2 {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 2.3em;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+#quartos-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    justify-content: space-around;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.qbox {
+    background-color: rgb(228, 228, 228);
+    border-radius: 10px;
+    width: 500px;
+}
+
+.qbox>img {
+    display: block;
+    border-radius: 10px 10px 0px 0px;
+    height: 300px;
+    width: 500px;
+    object-fit: cover;
+}
+
+.qbox>p {
+    text-align: center;
+    padding: 5px;
+}
+
+.qtitulo {
+    font-size: 1.2em;
+}
+
+.qdescricao {
+    color: rgb(70, 70, 70);
+}
+
+#servicos-container {
+    display: flex;
+    right: 0;
+    justify-content: center;
+    max-width: 1100;
+    flex-wrap: wrap;
+}
+
+.sbox {
+    display: flex;
+    width: 280px;
+    height: 280px;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.sbox>h3 {
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.sbox>p {
+    color: rgb(70, 70, 70);
+}
+
+.sbox>a {
+    background-color: rgb(228, 228, 228);
+    color: rgb(70, 70, 70);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.sbox>a:hover {
+    font-size: 1.1em;
+    transition: .3s ease-in-out;
+}
+
+.simg {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    height: 120px;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.simg>i {
+    font-size: 2.5em;
+    color: rgb(255, 255, 255);
+}
+
+#piscina>div {
+    background: url('../img/piscina-b.png') center center /cover no-repeat;
+}
+
+#spa>div {
+    background: url('../img/spa-b.png') center center /cover no-repeat;
+}
+
+#restaurante>div {
+    background: url('../img/restaurante-b.png') center center /cover no-repeat;
+}
+
+#estacionamento>div {
+    background: url('../img/estacionamento-b.png') center center /cover no-repeat;
+}
+
+#lugares-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 94vw;
+    gap: 50px;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#espaco {
+    display: none;
+}
+
+.lbox {
+    text-align: center;
+    width: 200px;
+}
+
+.lbox>h3 {
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.lbox>p {
+    color: rgb(70, 70, 70);
+}
+
+.limg>i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: rgb(36, 36, 36);
+}
+
+footer {
+    background-color: rgb(27, 27, 27);
+    position: relative;
+    margin-top: 20px;
+    height: 180px;
+    padding: 10px;
+}
+
+#contatos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contatos-container>div {
+    width: 300px;
+}
+
+#contatos-container>div>p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+}
+
+#contatos-container>div>h3 {
+    text-align: center;
+    color: white;
+    /* text-transform: uppercase; */
+}
+
+#creditos {
+    text-align: center;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: white;
+}
+
+#creditos>a {
+    color: white;
+    font-weight: bold;
+}
+
+#creditos>a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 840px) {
+    /* header */
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #navbarbtn {
+        display: block;
+    }
+
+    nav {
+        background-color: rgba(255, 255, 255, 0.884);
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 15vh;
+        width: 50vw;
+        height: 75vh;
+        opacity: 0;
+        transition: .5s ease-in-out;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        height: 75vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    li {
+        font-size: 1.2em;
+        width: 100%;
+    }
+
+    li>a {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    #navbarbtn>#l1 {
+        transition: .3s ease-in-out;
+    }
+
+    #navbarbtn>#l2 {
+        transition: .3s ease-in-out;
+    }
+
+    #navbarbtn>#l3 {
+        transition: .3s ease-in-out;
+    }
+
+    #check:checked~nav {
+        opacity: 1;
+    }
+
+    #check:checked~#navbarbtn>#l1 {
+        opacity: 0;
+    }
+
+    #check:checked~#navbarbtn>#l2 {
+        padding: 0;
+        margin: 0;
+        transform: rotate(-135deg);
+    }
+
+    #check:checked~#navbarbtn>#l3 {
+        padding: 0;
+        margin: 0;
+        transform: rotate(135deg);
+        top: -3px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    /* header */
+    nav {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 1300px) {
+    /* nossos quartos */
+
+    .qbox {
+        width: 70vw;
+        margin: 20px;
+    }
+
+    .qbox>img {
+        height: 42vw;
+        width: 70vw;
+    }
+}
+
+@media (max-width: 1300px) {
+
+    /* servicos */
+    #servicos-container {
+        max-width: 930px;
+        width: 100vw;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 1010px) {
+    #espaco {
+        display: block;
+    }
+}
+
+@media (max-width: 680px) {
+    footer {
+        height: 350px;
+    }
+}
