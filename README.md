@@ -1,5 +1,5 @@
 # site-hotel-responsivo
-<p>Projeto criado por mim totalmente resposivo em qualque tamanho de tela</p>
+<p>Projeto criado por mim totalmente responsivo em qualquer tamanho de tela</p>
 
 <p align="center">
     <img alt="Demo" src="src/img/hotel.gif">
