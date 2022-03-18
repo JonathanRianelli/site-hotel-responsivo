@@ -1,4 +1,7 @@
 # site-hotel-responsivo
+
+<p>Acesse o projeto <a href="https://jonathanrianelli.github.io/site-hotel-responsivo/">aqui</a></p>
+
 <p>Projeto criado por mim, totalmente responsivo em qualquer tamanho de tela</p>
 
 <p align="center">
