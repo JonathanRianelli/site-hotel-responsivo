@@ -1,0 +1,59 @@
+footer {
+    background-color: rgb(27, 27, 27);
+    position: relative;
+    margin-top: 20px;
+    height: 180px;
+    padding: 10px;
+}
+
+#contatos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contatos-container>div {
+    width: 300px;
+}
+
+#contatos-container>div>p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+}
+
+#contatos-container>div>h3 {
+    text-align: center;
+    color: white;
+}
+
+#creditos {
+    text-align: center;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: white;
+}
+
+#creditos>a {
+    color: white;
+    font-weight: bold;
+}
+
+#creditos>a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 680px) {
+    
+    footer {
+        height: 350px;
+    }
+}

@@ -1,0 +1,143 @@
+header {
+    height: 15vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-left: 10vw;
+}
+
+
+#navbarbtn {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.linha {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    margin-top: 8px;
+    height: 3px;
+    width: 33px;
+}
+
+ul {
+    display: flex;
+    margin-right: 8vw;
+}
+
+li>a {
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 30px;
+    align-items: center;
+}
+
+li>a:hover {
+    background-color: rgba(68, 68, 68, 0.178);
+    transition: .5s;
+}
+
+@media (max-width: 840px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #navbarbtn {
+        display: block;
+    }
+
+    nav {
+        background-color: rgba(255, 255, 255, 0.884);
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 15vh;
+        width: 0;
+        height: 75vh;
+        visibility: hidden;
+        transition: .5s;
+        overflow-x: hidden;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        height: 75vh;
+        width: 50vw;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    li {
+        font-size: 1.2em;
+        width: 100%;
+    }
+
+    li>a {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    #navbarbtn>#l1 {
+        transition: .3s ease-in-out;
+    }
+
+    #navbarbtn>#l2 {
+        transition: .3s ease-in-out;
+    }
+
+    #navbarbtn>#l3 {
+        transition: .3s ease-in-out;
+    }
+
+    #nav.active {
+        visibility: visible;
+        width: 50vw;
+    }
+
+    #navbarbtn.active>#l1 {
+        opacity: 0;
+    }
+
+    #navbarbtn.active>#l2 {
+        padding: 0;
+        margin: 0;
+        transform: rotate(-135deg);
+    }
+
+    #navbarbtn.active>#l3 {
+        padding: 0;
+        margin: 0;
+        transform: rotate(135deg);
+        top: -3px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    #nav.active {
+        width: 100vw;
+    }
+
+    ul {
+        width: 100vw;
+    }
+}
