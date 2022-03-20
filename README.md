@@ -1,4 +1,4 @@
-# site hotel responsivo
+# Site Hotel Responsivo
 
 <p>Acesse o projeto <a href="https://jonathanrianelli.github.io/site-hotel-responsivo/">aqui</a></p>
 
@@ -7,7 +7,7 @@
 <p>Projeto criado por mim, totalmente responsivo em qualquer tamanho de tela</p>
 
 
-## Linguagens
+## Linguagens Usadas
 - ✔️ HTML
 - ✔️ CSS
 - ✔️ JavaScript
