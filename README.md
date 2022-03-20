@@ -12,7 +12,7 @@
 - ✔️ CSS
 - ✔️ JavaScript
 
-## 🎨 Layout 
+## Layout 
 ### Desktop:
 <img src="src/img/hotel.gif">
 
