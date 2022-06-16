@@ -7,7 +7,7 @@
 <p>Projeto criado por mim, totalmente responsivo em qualquer tamanho de tela</p>
 
 
-## Linguagens Usadas
+## Tecnologias Usadas
 - ✔️ HTML
 - ✔️ CSS
 - ✔️ JavaScript
